@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="warmUp16.css">
+    <script src="jquery.js"></script>
+    <script src="warmUp16.js"></script>
+</head>
+<body>
+
+    <label for="#button1"><em>click here: </em></label>
+    <input id="button1" type="button" value="F.list">
+    <label for="#button2"><em>click here: </em></label>
+    <input id="button2" type="button" value="S.list">
+    <br><br>
+    <label for="#button3"><em>click here: </em></label>
+    <input id="button3" type="button" value="Create">
+    <br><br><br>
+    <label for="text1">Write your text here : </label>
+    <input id="text1" type="textarea" >
+    <br><br><br>
+
+<label for="#list1"><em> First list : </em></label>
+<ul id="list1">
+    
+</ul>
+<label for="#list2"><em> Second list : </em></label>  
+<ul id="list2">
+    
+</ul>
+
+<script>
+
+$(document).ready(function() {
+    
+    $("#button1").click(function() {
+        $("#list1").append("<li></li>");
+    });
+    $("#button2").click(function() {
+        $("#list2").append("<li></li>");
+    });
+})
+</script>
+    
+
+
+</body>
+
+</html>
